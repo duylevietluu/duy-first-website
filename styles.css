@@ -1,0 +1,319 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* HEADER */
+#header-nav {
+    background-color: #f6b319;
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img {
+    background: url('https://raw.githubusercontent.com/jhu-ep-coursera/fullstack-course4/master/examples/Lecture30/after/images/restaurant-logo.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+
+/* restaurant name */
+.navbar-brand h1 { 
+    font-family: 'Lora', serif;
+    color: #556c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+/* kosher cert */
+.navbar-brand p {
+    color: #000;
+    font-size: .7em;
+    margin-top: 15px;
+}
+
+.navbar-toggler {
+    position: relative;
+    float:right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.navbar-toggler:focus {
+    outline: 0;
+}
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+/* END HEADER */
+
+/* HOMEPAGE */
+.container .jumbotron {
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile {
+    background: url('https://raw.githubusercontent.com/jhu-ep-coursera/fullstack-course4/master/examples/Lecture30/after/images/menu-tile.jpg') no-repeat;
+    background-position: center;
+}
+#specials-tile {
+    background: url('https://raw.githubusercontent.com/jhu-ep-coursera/fullstack-course4/master/examples/Lecture30/after/images/specials-tile.jpg') no-repeat;
+    background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    opacity: .8;
+}
+
+/* END HOMEPAGE */
+
+/* FOOTER */
+.card-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+}
+.card-footer div.row {
+    margin-bottom: 35px;
+}
+#hours, #address {
+    line-height: 2;
+}
+#hours > span, #address > span {
+    font-size: 1.3em;
+}
+#testimonials {
+    font-style: italic;
+}
+#testimonials p:nth-child(2) {
+    margin-top:25px;
+}
+hr {
+    background-color: white;
+}
+/* END FOOTER */
+
+/* MENU CATEGORIES PAGE */
+.category-tile {
+    position: relative; /*anchor of span*/
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px; /*center trick*/
+}
+.category-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+}
+.category-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-tile + div {
+    margin-bottom: 50px;
+}
+/* END MENU CATEGORIES */
+
+/* SINGLE CATEGORY */
+.menu-item-tile {
+    margin-bottom: 25px;
+}
+.menu-item-tile hr {
+    width: 80%;
+}
+.menu-item-tile .menu-item-price {
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+    font-size: .6em;
+}
+.menu-item-photo {
+    position: relative; /*anchor for label*/
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.menu-item-photo div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.menu-item-descriptions {
+    padding-right: 30px;
+}
+h3.menu-item-title {
+    margin: 0 0 10px;
+}
+.menu-item-details {
+    font-size: 0.9em;
+    font-style: italic;
+}
+/* END SINGLE CATEGORY */
+
+/*******************************************************************************/
+/* XL ONLY */
+@media (min-width: 1200px) {
+    .container .jumbotron {
+        background: url('https://raw.githubusercontent.com/jhu-ep-coursera/fullstack-course4/master/examples/Lecture30/after/images/jumbotron_1200.jpg') no-repeat;
+        height: 675px;
+        
+    }
+}
+
+/* LARGE  ONLY (OLD MEDIUM)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container .jumbotron {
+        background: url('https://raw.githubusercontent.com/jhu-ep-coursera/fullstack-course4/master/examples/Lecture30/after/images/jumbotron_992.jpg') no-repeat;
+        height: 558px;
+    }
+}
+
+/* MEDIUM DEVICES ONLY (OLD SMALL)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    #logo-img {
+        background: url('https://raw.githubusercontent.com/jhu-ep-coursera/fullstack-course4/master/examples/Lecture30/after/images/restaurant-logo_medium.png') no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+    }
+
+    .container .jumbotron {
+        background: url('https://raw.githubusercontent.com/jhu-ep-coursera/fullstack-course4/master/examples/Lecture30/after/images/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+    }
+}
+
+/* SMALL AND XS DEVICES ONLY */
+@media (max-width: 767px) {
+    /* header */
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+    #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color: #f6b319;
+        color: #951c49;
+    }
+
+    /* restaurant name */
+    .navbar-brand h1 {
+        padding-top: 10px;
+        font-size: 5vw;
+    }
+    /* kosher cert */
+    .navbar-brand p {
+        font-size: .6em;
+        margin-top: 12px;
+    }collapsable-nav
+    /* star K */
+    .navbar-brand p img {
+        height: 20px;
+    }
+
+    /* homepage */
+    .container .jumbotron {
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    /* menu single category */
+    #menu-tile, #specials-tile {
+        width: 360px;
+        margin: 0 auto 15px auto;
+    }
+    .menu-item-photo {
+        margin-right: auto;
+    }
+    .menu-item-tile .menu-item-price {
+        text-align: center;
+    }
+    .menu-item-description {
+        text-align: center;
+    }
+}
+
+/* XS */
+@media (max-width: 479px) {
+    /* restaurant name */
+    .navbar-brand h1 {
+        padding-top: 5px;
+        font-size: 6vw;
+    }
+    
+    #menu-tile, #specials-tile {
+        width: 280px;
+        margin: 0 auto 15px auto;
+    }
+}

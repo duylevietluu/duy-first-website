@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Website Coding 1st</title>
+    
+  </head>
+
+  <body>
+    <header>
+      <!-- navigation bar -->
+      <nav id="header-nav" class="navbar navbar-expand-md navbar-light">
+        <!-- nav logo -->
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html" class="float-left d-md-block d-none">
+              <div id="logo-img" alt="Logo image"></div>
+            </a>
+            <div class="navbar-brand">
+              <a href="index.html"><h1>David Chu's China Bistro</h1></a>
+              <p><img src="https://raw.githubusercontent.com/jhu-ep-coursera/fullstack-course4/master/examples/Lecture30/after/images/star-k-logo.png" alt="Kosher certification"><span>Kosher Certified</span></p>
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- nav button -->
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsable-nav" aria-controls="collapsable-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- nav menu -->
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="menu-categories.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Awards</a>
+            </li>
+            <li id="phone" class="d-none d-lg-block nav-item">
+              <a href="tel:4405814402">
+                <span>440-581-4402</span>
+              </a>
+              <div>We deliver</div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div id="call-btn" class="d-sm-block d-md-none">
+      <a class="btn" href="tel:410-602-5008">
+      <span class="glyphicon glyphicon-earphone"></span>
+      410-602-5008
+      </a>
+    </div>
+
+    <div id="main-content" class="container">
+      <div class="jumbotron">
+        <img src="https://raw.githubusercontent.com/jhu-ep-coursera/fullstack-course4/master/examples/Lecture30/after/images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-fluid d-md-none">
+      </div>
+
+      <div id="home-tiles" class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <a href="https://goo.gl/maps/rAzBFQFjzD7t47D7A" target="_blank">
+            <div id="map-tile">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.5639420251623!2d-82.22444102404754!3d41.296593871311515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883a0bf72e23ebc7%3A0x9c77721bc49e60df!2sNoah%20Hall!5e0!3m2!1svi!2sus!4v1672260697214!5m2!1svi!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <span>map</span>
+            </div>
+          </a>
+        </div>
+      </div> <!-- end of home-tiles -->
+    </div>
+    <!-- end of #maincontent -->
+
+    <footer class="card-footer">
+      <div class="container">
+        <div class="row">
+          <section id="hours" class="col-md-4">
+            <span>Hours:</span><br>
+            Mon-Fri: 9:00am - 12:00 pm<br>
+            Weekends Closed for ARAMs
+            <hr class="d-block d-md-none">
+          </section>
+          <section id="address" class="col-md-4">
+            <span>Address:</span><br>
+            Noah Hall<br>
+            Oberlin College, OH 44074
+            <hr class="d-block d-md-none">
+          </section>
+          <section id="testimonials" class="col-md-4">
+            <p>"Delicious, and the waiter is very handsome!"</p>
+            <p>"Amazing, epic ARAM service!"</p>
+          </section>
+        </div>
+      </div>
+
+      <div class="mx-auto text-center">
+        &copy; Copyright by absolutely no-one, 2022
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
